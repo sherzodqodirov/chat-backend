@@ -6,22 +6,15 @@ import {GridFsStorage} from "multer-gridfs-storage";
 
 const router=express.Router();
 
-/*const storage = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: './fileMessages',
     filename: (req, file, cb) => {
         cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
     },
-});*/
-const url=process.env.DB_URL
-const storage = new GridFsStorage({
-    url: url,
-    file: (req, file) => {
-        return {
-            filename: 'file_' + Date.now()
-        };
-    }
 });
-const upload = multer({ storage })
+
+
+const upload = multer({ storage }).single('content');
 
 
 router.post("/",createChat)
