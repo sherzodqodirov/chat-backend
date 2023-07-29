@@ -13,7 +13,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: "https://chat-api-fkmg.onrender.com",
+    origin: "https://chat-fronted.onrender.com",
     headers: ["Content-Type"],
     credentials: true,
 }));
