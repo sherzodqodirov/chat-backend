@@ -12,7 +12,11 @@ import ChatRoute from "./routes/ChatRoute.js";
 const app = express();
 dotenv.config();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://chat-api-fkmg.onrender.com",
+    headers: ["Content-Type"],
+    credentials: true,
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 mongoose.set('strictQuery', false);
