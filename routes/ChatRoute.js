@@ -13,9 +13,15 @@ const router=express.Router();
     },
 });*/
 const url=process.env.DB_URL
-const storage = new GridFsStorage({ url });
-
-const upload = multer({ storage }).single('content');
+const storage = new GridFsStorage({
+    url: url,
+    file: (req, file) => {
+        return {
+            filename: 'file_' + Date.now()
+        };
+    }
+});
+const upload = multer({ storage })
 
 
 router.post("/",createChat)
