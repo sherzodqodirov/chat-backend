@@ -35,6 +35,7 @@ app.use('/chat', ChatRoute);
 
 startServer();
 
+
 async function startServer() {
     try {
         await mongoose.connect(process.env.DB_URL, {
