@@ -57,7 +57,7 @@ export const UploadMessages = async (req, res, next) => {
         const chatDataFile= await MessageModel.create({
             sender,
             receiver,
-            content:`http://localhost:${process.env.PORT}/static/${req.file.filename}`,
+            content:`static/${req.file.filename}`,
             contentType:"file"
         })
         res.status(201).json({message: "ok"});
