@@ -1,0 +1,6 @@
+
+^javascript:S1481"=Remove the declaration of the unused 'chatDataText' variable.(•½©úÿÿÿÿ
+[javascript:S1854":Remove this useless assignment to variable "chatDataText".(•½©úÿÿÿÿ
+Yjavascript:S14819"=Remove the declaration of the unused 'chatDataFile' variable.(æ¹ÕÊ
+Vjavascript:S18549":Remove this useless assignment to variable "chatDataFile".(æ¹ÕÊ
+Rjavascript:S4123S"1Refactor this redundant 'await' on a non-promise.(“¬ĞŒùÿÿÿÿ
