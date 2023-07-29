@@ -15,8 +15,6 @@ C
 routes/ChatRoute.js,d\4\d4b69b7d7c4deb85b4516ee0e9acee10e2b836f9
 F
 models/MessageModel.js,d\2\d2db993c826e6fafab02abe7f72d75d0d3254090
-8
-index.js,a\7\a77b15c0d64cf6111e025645e562faf8ccabb9d7
 M
 controllers/ChatController.js,e\3\e3ad5d52d4fe9db96c0bc0a1b871a1a6a1b8c3d1
 N
